@@ -42,7 +42,7 @@ def about(update, context):
 
 
 def contact(update, context):
-    update.message.reply_text("Developer: Christian Clapton Edison G. Orioste \nEmail: clapton.five@gmail.com\n")
+    update.message.reply_text("Developer: Clapton Orioste \nEmail: clapton.five@gmail.com\nPorfolio: claptonorioste.com")
 
 
 def handle_message(update, context):
