@@ -20,7 +20,13 @@ def ask(question, chat_log=None):
         frequency_penalty=0.0,
         presence_penalty=0.0,
     )
-    story = response['choices'][0]['text']
+    story = ''
+    try:
+        story = response['choices'][0]['text']
+    except Exception as e:
+        story = "Something went wrong. Please try again or contact the developer."
+    
+   
     
     return str(story)
 
