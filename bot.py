@@ -4,8 +4,9 @@ import logging, os
 
 PORT = int(os.environ.get('PORT', '8443'))
 
-with open('token.txt', 'r') as f:
-    TOKEN = str(f.read())
+# with open('token.txt', 'r') as f:
+#     TOKEN = str(f.read())
+TOKEN = '5979185099:AAEFFYkQR2ci0_icTk0lkUjvsd8mzCE7jSE'
 
 session = {}
 
@@ -17,15 +18,15 @@ logger = logging.getLogger(__name__)
 
 
 def start(update, context):
-    update.message.reply_text("Hello! Welcome to TriBot")
+    update.message.reply_text("Hello! my friend \nI'm Einstein, your virtual helper. \nYou can ask me everything you wanted to know. \n\nYou can ask help for your homework, help you with a tough decision, anything!\n\nType /contact to view Developer Info \nType /about to view bot description")
 
 
 def help(update, context):
     update.message.reply_text("""
     The Following commands are available:
-    /start -> Welcome to Trigan
+    /start -> Welcome to ManongEinstein
     /help ->This Message
-    /about -> About TriBot
+    /about -> About ManongEinstein
     /contact -> Developer Info
     
     """)
@@ -36,12 +37,12 @@ def error(update, context):
 
 def about(update, context):
     update.message.reply_text("""
-            TriganBot is not just a chatbot. It's so much more than that. It's an AI-enabled customer service solution that answers your questions, responds to your tweets, and helps you find the products you're looking for. TriganBot has the power to save you time, increase your sales, and make your customer service operation more efficient.
+            ManongEinstein is not just a chatbot. It's so much more than that. It's an AI-enabled students service solution that answers your questions.
         """)
 
 
 def contact(update, context):
-    update.message.reply_text("Developer: Sushanth Kurdekar \n email: sushanth@logicalbee.in\n")
+    update.message.reply_text("Developer: Christian Clapton Edison G. Orioste \nEmail: clapton.five@gmail.com\n")
 
 
 def handle_message(update, context):
